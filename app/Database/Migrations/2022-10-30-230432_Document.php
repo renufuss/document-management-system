@@ -27,8 +27,7 @@ class Document extends Migration
                 'constraint'     => '255'
             ],
             'size'       => [
-                'type'           => 'VARCHAR',
-                'constraint'     => '255'
+                'type'           => 'FLOAT',
             ],
             'status'       => [
                 'type'           => 'TINYINT',
