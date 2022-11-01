@@ -18,7 +18,13 @@ class DocumentModel extends Model
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
 
-    protected $validationRules    = [];
-    protected $validationMessages = [];
+    protected $validationRules    = [
+        'name' => 'alpha_numeric_space'
+    ];
+    protected $validationMessages = [
+        'name' => [
+            'alpha_numeric_space' => 'Nama hanya boleh angka atau huruf'
+        ],
+    ];
     protected $skipValidation     = false;
 }
