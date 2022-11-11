@@ -39,6 +39,7 @@ $routes->get('/', 'Dashboard::index');
 
 // Room
 $routes->get('/ruang', 'Room::index');
+$routes->get('/ruang/table', 'Room::tableRoom');
 
 /*
  * --------------------------------------------------------------------

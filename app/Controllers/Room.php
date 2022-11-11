@@ -89,4 +89,15 @@ class Room extends BaseController
             return json_encode($response);
         }
     }
+
+    public function tableRoom()
+    {
+        if ($this->request->isAJAX()) {
+            $data = [
+                'rooms' => $this->roomModel->findAll(),
+            ];
+            $response['success'] = view('MasterSetup/Room/Table/tableRoom', $data);
+            return json_encode($response);
+        }
+    }
 }

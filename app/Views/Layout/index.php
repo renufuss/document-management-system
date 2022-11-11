@@ -39,6 +39,8 @@
             document.documentElement.setAttribute("data-theme", themeMode);
         }
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <!--end::Theme mode setup on page load-->
     <!--begin::App-->
     <div class="d-flex flex-column flex-root app-root" id="kt_app_root">
